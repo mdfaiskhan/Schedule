@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+   <!-- <div class="container">
+        <div class="row">-->
+           
+                <nav class="navbar navbar-expand-md  bg-info">
+                    <div class="col-md-10 px-2">
+                    <a href="/" class="navbar-brand">EVENT SCHEDULER</a></div>
+                    <div class="col-md text-center">
+                    <a href="/" class="navbar-brand">HOME</a>
+                </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container text-center">
+    <form class="form" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+       <!-- <input type="submit">-->
+       <div class="d-grid gap-2 col-1 mx-auto">
+        <button type="submit" class="btn btn-info btn-md"> Create </button>
+    </div>
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
